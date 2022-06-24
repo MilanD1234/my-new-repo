@@ -71,7 +71,7 @@ import { useRouter } from "next/router";
 import Header from "next/head";
 
 const fetcher = async () => {
-  const response = await fetch(`http://localhost:3000/products`);
+  const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
   const data = await response.json();
   return data;
 };
