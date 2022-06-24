@@ -1,0 +1,83 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: rgb(105, 98, 98);
+  color: white;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.Loader {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.index-image {
+  margin-top: 70px;
+}
+.header-text {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.menu-bar {
+  background: white;
+  color: black;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+}
+.menu {
+  margin: auto;
+}
+.menu-bar a {
+  padding: 15px;
+}
+.menu-bar a:hover {
+  background: cornflowerblue;
+  color: white;
+  border-radius: 50px;
+}
+.menu-container {
+  margin: auto;
+}
+.card-container {
+  margin-top: 10px;
+}
+.user-description {
+  max-width: 640px;
+  text-align: justify;
+  margin: auto;
+}
+.contact-us {
+  max-width: 640px;
+  text-align: justify;
+  margin: auto;
+}
+
+.join-us-button {
+  margin-top: 50px;
+}
+.join-us-button button {
+  margin: auto;
+}
+.team-member-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.team-heading {
+  padding-bottom: 30px;
+}

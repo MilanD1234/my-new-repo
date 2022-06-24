@@ -1,0 +1,66 @@
+// export const getStaticPaths = async () => {
+//   const res = await fetch("http://localhost:3000/products");
+//   const data = await res.json();
+
+//   const paths = data.map((currenElement) => {
+//     return {
+//       params: {
+//         blogno: currenElement.id.toString(),
+//         id: currenElement.id.toString(),
+//       },
+//     };
+//   });
+
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
+
+// export const getStaticProps = async (context) => {
+//   const id = context.params.blogno;
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+//   const data = await res.json();
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
+
+// export const getServerSideProps = async (context) => {
+//   const id = context.params.blogno;
+//   const res = await fetch(`http://localhost:3000/childnodes/${id}`);
+//   const data = await res.json();
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
+
+// const myData = ({ data }) => {
+//   return (
+//     <>
+//       <Navbar />
+//       <div className="card-container">
+//         <Card css={{ p: "$6", mw: "90%", m: "auto" }}>
+//           <Card.Header>
+//             <h3>{data?.id}</h3>
+//           </Card.Header>
+//           <Grid.Container css={{ pl: "$6" }}>
+//             <Grid xs={12}>
+//               <Text h4 css={{ lineHeight: "$xs" }}>
+//                 {data?.title}
+//               </Text>
+//             </Grid>
+//             <Grid xs={12}>
+//               <Text css={{ color: "$accents8" }}>{data?.body}</Text>
+//             </Grid>
+//           </Grid.Container>
+//         </Card>
+//       </div>
+//     </>
+//   );
+// };
+// export default myData;
